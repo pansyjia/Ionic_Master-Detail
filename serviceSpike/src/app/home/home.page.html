@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h2> My Heroes: </h2>
+  <ion-list lines="full">
+    <ion-item *ngFor="let h of heroesList" (click)="selectHero(h)" detail>
+      <ion-label>
+        {{ h.getName() }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Hero #{{ heroId }}</h1>
+  <ion-list>
+    <ion-item>
+      <ion-label>Hero Name: </ion-label>
+      <ion-input [(ngModel)]="heroName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-button (click)=saveHero()>Save Hero</ion-button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <p></p>
+  <ion-back-button defaultHref="/home"></ion-back-button>
+</ion-content>

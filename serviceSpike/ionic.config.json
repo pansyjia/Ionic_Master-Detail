@@ -1,0 +1,7 @@
+{
+  "name": "serviceSpike",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
